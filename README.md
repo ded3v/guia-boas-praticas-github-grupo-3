@@ -6,10 +6,15 @@ Este projeto foi desenvolvido pelo Grupo 3 com o objetivo de apresentar, de form
 
 ## Integrantes
 
-- Integrante 1 — [GitHub](LINK)
-- Integrante 2 — [GitHub](LINK)
-- Integrante 3 — [GitHub](LINK)
-- Integrante 4 — [GitHub](LINK)
+NAME/GitHub User
+
+- André Chagas  — [ded3v]
+
+- Milton Magalhães — [miltonmaglhaesv]
+
+- Lucas Madureiro — [LucasMadureiro]
+
+- Sergiofeitosaa — [Sergiofeitosaa]
 
 ## Sumário
 
