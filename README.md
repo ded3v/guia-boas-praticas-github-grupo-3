@@ -156,11 +156,64 @@ Após a aprovação, realizar o merge da branch.
 
 ## 6. O que é Code Review
 
-> Seção a ser desenvolvida pelo integrante responsável.
+O Code Review é o processo de revisão das alterações realizadas por outro desenvolvedor antes que elas sejam incorporadas ao projeto.
 
-## 7. Boas práticas para commits
+O objetivo não é apenas encontrar erros, mas também melhorar a qualidade do código, compartilhar conhecimento entre a equipe e garantir que as boas práticas estejam sendo seguidas.
 
-> Seção a ser desenvolvida pelo integrante responsável.
+Durante um Code Review é comum verificar:
+
+* Se o código está funcionando corretamente.
+* Se a solução atende ao objetivo da tarefa.
+* Se existem oportunidades de simplificação.
+* Se a documentação foi atualizada quando necessário.
+* Se as convenções do projeto foram respeitadas.
+
+Um bom Code Review ajuda a reduzir bugs, aumenta a qualidade do software e promove o aprendizado entre os integrantes da equipe.
+
+## 7. Boas práticas para commits e exemplos
+
+Um commit representa um registro das alterações realizadas no projeto. Para facilitar o entendimento do histórico, recomenda-se que cada commit seja pequeno, objetivo e tenha uma mensagem clara.
+
+
+**Boas práticas**
+
+* Fazer commits frequentes.
+* Escrever mensagens curtas e descritivas.
+* Alterar apenas um assunto por commit.
+* Evitar mensagens genéricas como “alterações” ou “teste”.
+* Utilizar prefixos para indicar o tipo da alteração.
+
+
+**Prefixos mais utilizados:**
+
+feat:            Nova funcionalidade
+
+fix:             Correção de erro
+
+docs:            Alteração na documentação
+
+style:           Ajustes de formatação
+
+refactor:        Refatoração sem alterar comportamento
+
+test:            Inclusão ou alteração de testes
+
+chore:           Tarefas de manutenção do projeto
+
+
+**Exemplos de mensagens de commit:**
+
+docs: adiciona seção sobre Pull Requests
+
+feat: implementa tela de login
+
+fix: corrige erro de autenticação
+
+style: ajusta formatação do README
+
+refactor: simplifica validação de usuários
+
+
 
 ## 8. Como evitar conflitos
 
