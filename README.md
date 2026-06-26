@@ -213,19 +213,110 @@ style: ajusta formatação do README
 
 refactor: simplifica validação de usuários
 
-
-
 ## 8. Como evitar conflitos
 
-> Seção a ser desenvolvida pelo integrante responsável.
+Em um trabalho em equipe, conflitos podem acontecer quando duas ou mais pessoas alteram a mesma parte de um arquivo ao mesmo tempo. No Git, isso costuma acontecer principalmente quando vários integrantes editam as mesmas linhas de um mesmo arquivo, como o `README.md`.
+
+Para evitar conflitos, a equipe deve seguir algumas boas práticas:
+
+* Cada integrante deve trabalhar em uma branch própria;
+* Cada pessoa deve editar somente a seção pela qual ficou responsável;
+* Antes de começar uma nova alteração, é importante atualizar a branch `main`;
+* Antes de finalizar um Pull Request, a branch de trabalho deve estar atualizada com a versão mais recente da `main`;
+* O grupo deve combinar previamente quem será responsável por cada parte do README;
+* Mudanças em seções de outra pessoa devem ser avisadas antes no grupo.
+
+Exemplo de atualização da branch `main` antes de começar:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+Depois disso, o integrante pode criar sua branch de trabalho:
+
+```bash
+git checkout -b docs/conflitos-fluxo-pratico
+```
+
+Essa prática reduz bastante o risco de conflitos, porque cada pessoa trabalha em uma parte separada do projeto.
+
 
 ## 9. Exemplo prático de fluxo de trabalho
 
-> Seção a ser desenvolvida pelo integrante responsável.
+Para entender melhor como funciona o trabalho em equipe no GitHub, imagine a seguinte situação: um integrante ficou responsável por escrever a seção sobre conflitos e fluxo prático do README.
+
+Primeiro, ele clona o repositório do grupo:
+
+```bash
+git clone https://github.com/USUARIO/guia-boas-praticas-github-grupo-3.git
+```
+
+Depois entra na pasta do projeto:
+
+```bash
+cd guia-boas-praticas-github-grupo-3
+```
+
+Em seguida, cria uma branch própria para a sua tarefa:
+
+```bash
+git checkout -b docs/conflitos-fluxo-pratico
+```
+
+Depois, abre o projeto em sua IDE ou editor de código e edita somente a parte do README relacionada à sua Issue.
+
+Após finalizar a edição, verifica quais arquivos foram modificados:
+
+```bash
+git status
+```
+
+Em seguida, adiciona o arquivo alterado:
+
+```bash
+git add README.md
+```
+
+Depois cria um commit com uma mensagem clara:
+
+```bash
+git commit -m "docs: adiciona seção sobre conflitos e fluxo prático"
+```
+
+Após o commit, envia a branch para o GitHub:
+
+```bash
+git push -u origin docs/conflitos-fluxo-pratico
+```
+
+Depois disso, o integrante acessa o repositório no GitHub e abre um Pull Request da sua branch para a branch `main`.
+
+Na descrição do Pull Request, ele pode relacionar a Issue correspondente usando:
+
+```text
+Closes #NUMERO-DA-ISSUE
+```
+
+Exemplo:
+
+```text
+Closes #4
+```
+
+Após a abertura do Pull Request, outro integrante do grupo deve revisar o conteúdo.
+Se estiver tudo correto, o Pull Request pode ser aprovado e incorporado à branch `main`.
+
+Esse fluxo representa uma prática real de colaboração no GitHub, utilizando Issue, Branch, Commit, Pull Request e Code Review.
+.
 
 ## 10. Conclusão
 
-> Seção a ser desenvolvida pelo integrante responsável.
+O uso correto do Git e do GitHub ajuda uma equipe a trabalhar de forma mais organizada, segura e colaborativa. Ao dividir as tarefas por Issues, criar branches próprias, fazer commits claros e abrir Pull Requests, o grupo consegue acompanhar melhor o andamento do projeto e reduzir erros durante o desenvolvimento.
+
+Também é importante evitar alterações diretamente na branch `main`, manter a comunicação entre os integrantes e atualizar a branch de trabalho antes de finalizar um Pull Request. Essas práticas diminuem a chance de conflitos e facilitam a revisão do código ou da documentação.
+
+Portanto, seguir um fluxo de trabalho bem definido torna o projeto mais profissional e aproxima a equipe de práticas utilizadas em ambientes reais de desenvolvimento de software.
 
 ---
 
