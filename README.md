@@ -131,10 +131,15 @@ chore/ — tarefas de manutenção (CI, dependências) → chore/atualizar-depen
 
 
 Regras de ouro:
+
 ✅ Use letras minúsculas e hífens para separar palavras
+
 ✅ Seja descritivo, mas conciso
+
 ✅ Inclua o número da Issue quando houver: feature/42-login-social
+
 ❌ Evite nomes genéricos como minha-branch, teste ou fix2
+
 ❌ Não use espaços, underscores ou letras maiúsculas
 
 ## 5. O que são Pull Requests
