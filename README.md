@@ -116,12 +116,19 @@ O padrão mais utilizado é tipo/descricao-curta. Isso facilita a comunicação,
 
 Prefixos mais utilizados:
 feature/ — nova funcionalidade → feature/autenticacao-oauth
+
 fix/ ou bugfix/ — correção de bug não-urgente → fix/erro-ao-salvar-formulario
+
 hotfix/ — correção crítica direto para produção → hotfix/falha-no-checkout
+
 refactor/ — melhoria de código sem mudar comportamento → refactor/servico-de-pagamento
+
 docs/ — atualização de documentação → docs/atualizar-readme
+
 test/ — adição ou melhoria de testes → test/cobertura-modulo-auth
+
 chore/ — tarefas de manutenção (CI, dependências) → chore/atualizar-dependencias
+
 
 Regras de ouro:
 ✅ Use letras minúsculas e hífens para separar palavras
