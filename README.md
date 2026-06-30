@@ -8,13 +8,10 @@ Este projeto foi desenvolvido pelo Grupo 3 com o objetivo de apresentar, de form
 
 NAME/GitHub User
 
-- André Chagas  — [ded3v]
-
-- Milton Magalhães — [miltonmaglhaesv]
-
-- Lucas Madureiro — [LucasMadureiro]
-
-- Sergiofeitosaa — [Sergiofeitosaa]
+- André Chagas — [@ded3v](https://github.com/ded3v)
+- Milton Magalhães — [@miltonmagalhaesv](https://github.com/miltonmagalhaesv)
+- Lucas Madureiro — [@LucasMadureiro](https://github.com/LucasMadureiro)
+- Sergio Feitosa — [@Sergiofeitosaa](https://github.com/Sergiofeitosaa)
 
 ## Sumário
 
@@ -35,30 +32,29 @@ NAME/GitHub User
 
 Um repositório (ou repo) é o espaço onde todo o código, histórico de alterações, arquivos e configurações de um projeto ficam armazenados. Pense nele como uma pasta inteligente que registra cada mudança feita ao longo do tempo.
 
-O que um repositório contém?
+### O que um repositório contém?
 
-Código-fonte — todos os arquivos do projeto (HTML, CSS, JS, Python etc.)
-Histórico de commits — registro de cada alteração, com autor, data e mensagem
-Branches e tags — linhas paralelas de desenvolvimento e marcações de versões
-Documentação — README, licença e regras de contribuição
+- **Código-fonte:** arquivos do projeto, como HTML, CSS, JavaScript e Python;
+- **Histórico de commits:** registro das alterações, autores e mensagens;
+- **Branches e tags:** linhas de desenvolvimento e marcações de versões;
+- **Documentação:** README, licença e regras de contribuição.
 
-Tipos de repositório
+### Tipos de repositório
 
-Público — qualquer pessoa pode ver o código. Ideal para projetos open source.
-Privado — apenas membros convidados têm acesso. Para projetos internos ou comerciais.
+- **Público:** qualquer pessoa pode visualizar o conteúdo;
+- **Privado:** apenas pessoas autorizadas possuem acesso.
 
 ## 2. O que são Issues
 
 Issues são registros de tarefas, bugs, sugestões ou discussões relacionadas ao projeto. Funcionam como um quadro de comunicação integrado ao repositório, onde a equipe acompanha o que precisa ser feito.
 
-Tipos comuns de Issues
+### Tipos comuns de Issues
 
-bug — relatar um comportamento incorreto ou erro no sistema
-feature — solicitar ou propor uma nova funcionalidade
-enhancement — sugerir melhoria em algo que já existe
-docs — atualização ou criação de documentação
-question — tirar dúvidas sobre o projeto
-Boas práticas ao abrir uma Issue
+- `bug`: relata um erro;
+- `feature`: propõe uma nova funcionalidade;
+- `enhancement`: sugere uma melhoria;
+- `docs`: alteração na documentação;
+- `question`: registra uma dúvida.
 
 Título claro e específico
 
@@ -82,7 +78,9 @@ Imagine que a equipe deseja criar uma funcionalidade de login.
 
 Em vez de alterar diretamente a branch principal, cria-se uma nova branch:
 
+```bash
 git checkout -b feature/login
+```
 
 Fluxo de trabalho:
 
@@ -95,18 +93,21 @@ main
 
 Após a conclusão, as alterações são incorporadas à branch principal por meio de um Pull Request.
 
-Fluxo básico de uma branch
+### Fluxo básico de uma branch
 
-bash
-#1. Criar a branch
+```bash
+# Criar a branch
 git checkout -b feature/cadastro-usuario
 
-#2. Fazer commits normalmente
+# Adicionar alterações
 git add .
-git commit -m "feat: adiciona formulário de cadastro"
 
-#3. Enviar para o repositório remoto
-git push origin feature/cadastro-usuario
+# Criar o commit
+git commit -m "feat: adiciona formulario de cadastro"
+
+# Enviar a branch
+git push -u origin feature/cadastro-usuario
+```
 
 #4. Abrir um Pull Request no GitHub para revisão
 
@@ -114,21 +115,15 @@ git push origin feature/cadastro-usuario
 
 O padrão mais utilizado é tipo/descricao-curta. Isso facilita a comunicação, organização e automação de pipelines.
 
-Prefixos mais utilizados:
-feature/ — nova funcionalidade → feature/autenticacao-oauth
+### Prefixos mais utilizados
 
-fix/ ou bugfix/ — correção de bug não-urgente → fix/erro-ao-salvar-formulario
-
-hotfix/ — correção crítica direto para produção → hotfix/falha-no-checkout
-
-refactor/ — melhoria de código sem mudar comportamento → refactor/servico-de-pagamento
-
-docs/ — atualização de documentação → docs/atualizar-readme
-
-test/ — adição ou melhoria de testes → test/cobertura-modulo-auth
-
-chore/ — tarefas de manutenção (CI, dependências) → chore/atualizar-dependencias
-
+- `feature/`: nova funcionalidade. Exemplo: `feature/autenticacao-oauth`;
+- `fix/` ou `bugfix/`: correção de bug não urgente. Exemplo: `fix/erro-ao-salvar-formulario`;
+- `hotfix/`: correção crítica em produção. Exemplo: `hotfix/falha-no-checkout`;
+- `refactor/`: melhoria interna sem alterar o comportamento. Exemplo: `refactor/servico-de-pagamento`;
+- `docs/`: atualização de documentação. Exemplo: `docs/atualizar-readme`;
+- `test/`: criação ou melhoria de testes. Exemplo: `test/cobertura-modulo-auth`;
+- `chore/`: tarefas de manutenção. Exemplo: `chore/atualizar-dependencias`.
 
 Regras de ouro:
 
@@ -149,11 +144,13 @@ Pull Request (PR) é a forma de propor a integração de uma branch ao código p
 Fluxo resumido:
 branch feature → Pull Request → revisão do time → merge na main
 
-Boas práticas:
-Descreva o que foi feito e por quê
-Referencie a Issue relacionada com Closes #número
-Mantenha o PR pequeno e focado em um único objetivo
-Solicite revisão de pelo menos um colega antes de fazer o merge
+### Boas práticas para Pull Requests
+
+- Descrever o que foi realizado;
+- Explicar por que a alteração foi necessária;
+- Referenciar a Issue com `Closes #numero`;
+- Manter o Pull Request pequeno e focado;
+- Solicitar a revisão de outro integrante.
 
 Exemplo Prático
 Criar uma branch:
@@ -320,7 +317,6 @@ Após a abertura do Pull Request, outro integrante do grupo deve revisar o conte
 Se estiver tudo correto, o Pull Request pode ser aprovado e incorporado à branch `main`.
 
 Esse fluxo representa uma prática real de colaboração no GitHub, utilizando Issue, Branch, Commit, Pull Request e Code Review.
-.
 
 ## 10. Conclusão
 
