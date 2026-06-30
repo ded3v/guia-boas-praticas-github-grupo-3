@@ -117,19 +117,24 @@ O padrão mais utilizado é tipo/descricao-curta. Isso facilita a comunicação,
 
 ### Prefixos mais utilizados
 
-- `feature/`: nova funcionalidade;
-- `fix/`: correção de erro;
-- `hotfix/`: correção crítica;
-- `refactor/`: melhoria interna no código;
-- `docs/`: documentação;
-- `test/`: testes;
-- `chore/`: manutenção.
+- `feature/`: nova funcionalidade. Exemplo: `feature/autenticacao-oauth`;
+- `fix/` ou `bugfix/`: correção de bug não urgente. Exemplo: `fix/erro-ao-salvar-formulario`;
+- `hotfix/`: correção crítica em produção. Exemplo: `hotfix/falha-no-checkout`;
+- `refactor/`: melhoria interna sem alterar o comportamento. Exemplo: `refactor/servico-de-pagamento`;
+- `docs/`: atualização de documentação. Exemplo: `docs/atualizar-readme`;
+- `test/`: criação ou melhoria de testes. Exemplo: `test/cobertura-modulo-auth`;
+- `chore/`: tarefas de manutenção. Exemplo: `chore/atualizar-dependencias`.
 
 Regras de ouro:
+
 ✅ Use letras minúsculas e hífens para separar palavras
+
 ✅ Seja descritivo, mas conciso
+
 ✅ Inclua o número da Issue quando houver: feature/42-login-social
+
 ❌ Evite nomes genéricos como minha-branch, teste ou fix2
+
 ❌ Não use espaços, underscores ou letras maiúsculas
 
 ## 5. O que são Pull Requests
